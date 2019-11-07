@@ -5,12 +5,18 @@
 - Install docker
 - Build Docker image with  with `docker build -t hello-docker .`
 - View your image with `docker image ls hello-docker`
-- Run with `docker run -d -p 3000:3000 hello-docker`
+- Run with `docker run -d -p 3000:3000 hello-docker` 
 - View with `docker container ls`
 - Stop with `docker stop <container id>`
 - Push your docker image with docker push https://docs.docker.com/engine/reference/commandline/push/
-- Run your image off of dockerhub `docker run -p 3000:3000 <username>/hello-docker:v1`
+- Run your image off of dockerhub `docker run -d -p 3000:3000 <username>/hello-docker:v1`
 - Try running someone else's image
+- `docker pull <image>`
+
+- Pushing
+- docker image ls
+- docker tag hello-docker seafoodghost/hello-docker
+- docker push seafoodghost/hello-docker
 
 ## Inspecting docker containers
 - Get into your contaienr with `docker exec -it <id> sh`
